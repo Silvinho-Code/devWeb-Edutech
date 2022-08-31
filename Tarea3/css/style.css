@@ -23,15 +23,16 @@ body {
                  HEADER
 ==============================================
 */
-header {
+.encabezado {
   max-width: 100%;
 }
 a {
   text-decoration: none;
   color: #F54C4C; /*rojo*/
 }
-h1, h2, h3, h4 {
+h1, h2, h3, h4, h5 {
   text-align: center;
+  color: black;
 }
 .lista {
   background-color: #18F555; /*verde*/
@@ -45,22 +46,21 @@ div.lista ol {
   color: #F5C61B; /*naranja*/
   background-color: #3344F5; /*morado*/
   font-size: 50px;
-  text-align: center;
 }
 .pgPrin a i {
   margin-right: 35px;
+  padding-left: 0px;
 }
 .menuBarra {
   background-color: orange;
+  border-radius: 20px;
 }
 .menuBarra a {
   color: #3344F5; /*morado*/
+  justify-content: center;
 }
 .menuBarra a:hover {
   background-color: lightgreen;
-}
-.pgPrin, .menuBarra {
-  border-radius: 20px;
 }
 /*
 ==============================================
@@ -75,28 +75,45 @@ div.lista ol {
 }
 p {
   color: white;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 img {
-  min-width: 100%;
+  min-width: 60%;
   max-width: 350px;
-  
   height: auto;
   border-radius: 20px;
+}
+.ima {
+  display: flex;
+  justify-content: center;
 }
 article p a {
   color: #18F555; /*verde*/
   font-size: 18px;
 }
-article span{
-  text-align: center;
-}
 h5 {
   text-align: center;
 }
              /*SONIDO*/
-
+.contenedor h3 {
+  margin-bottom: 5px;
+}
+.music {
+  text-align: center;
+  margin-bottom: 10px;
+}
+.music h4 {
+  margin-bottom: 5px;
+}
              /*VIDEO*/
+.contenido iframe {
+  text-align: center;
+}
              /*GEO*/
+.mapa {
+  text-align: center;
+}
 /*
 ==============================================
                 FOOTER
@@ -105,10 +122,12 @@ h5 {
 .pie {
   background-color: #18F555; /*verde*/
   border-radius: 20px;
+  margin-bottom: 5px;
 }
 .redes {
   font-size: 50px;
 }
 .copyright, .redes {
   text-align: center;
+  padding-bottom: 15px;
 }
