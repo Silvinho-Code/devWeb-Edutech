@@ -1,0 +1,12 @@
+body a {
+  text-decoration: none;
+}
+.asign {
+  background-color: #b1b8ba;
+}
+.nav-item {
+  margin-right: 5px;
+}
+section, header, div.asign {
+  text-align: center;
+}
