@@ -10,3 +10,17 @@ body a {
 section, header, div.asign {
   text-align: center;
 }
+p {
+  color: black;
+}
+.title-asign {
+  text-align: center;
+}
+.sect-asign .container {
+  margin-top: 5px;
+}
+.form-asign {
+  background-color: #b1b8ba;
+}
+
+/**/
