@@ -9,6 +9,9 @@
   <!-- CSS only -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+  <style>
+    a {text-decoration: none;}
+  </style>
 
   <!-- JAVASCRIPT Bundle with Popper -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"></script>
@@ -17,47 +20,52 @@
 
 <body>
 
-  <div class="container mt-3">
-    <h2>Toggleable Pills</h2>
-    <br>
-    <!-- Nav pills -->
-    <ul class="nav nav-pills" role="tablist">
-      <li class="nav-item">
-        <a class="nav-link active" data-bs-toggle="pill" href="index.html"><i class="bi bi-house"></i> INICIO</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" data-bs-toggle="pill" href="#menu1">Menu 1</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" data-bs-toggle="pill" href="#menu2">Menu 2</a>
-      </li>
-    </ul>
-  
-    <!-- Tab panes -->
-    <div class="tab-content">
-      <div id="home" class="container tab-pane active"><br>
-        <h3>INICIO</h3>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+  <header class="container-fluid bg-info rounded">
+    <nav>
+      <div class="nav nav-tabs" id="nav-tab" role="tablist">
+        <button class="nav-link active">
+          <a href="index.html">
+            <i class="bi bi-house-fill"></i> INICIO
+          </a>
+        </button>
+        <button class="nav-link" data-bs-toggle="tab">
+          <a href="#">
+            <i class="bi bi-exclamation-triangle-fill"></i> Alertas
+          </a>
+        </button>
+        <button class="nav-link" data-bs-toggle="tab">
+          <a href="#">
+            <i class="bi bi-chevron-left"><i class="bi bi-images"></i><i class="bi bi-chevron-right"></i></i> Carrusel
+          </a>
+        </button>
+        <button class="nav-link" data-bs-toggle="tab">
+          <a href="#">
+            <i class="bi bi-image-fill"></i> Imágenes
+          </a>
+        </button>
+        <button class="nav-link" data-bs-toggle="tab" type="button" role="tab" aria-controls="nav-profile" aria-selected="false">
+          <a href="#">
+            <i class="bi bi-list"></i> Menús desp
+          </a>
+        </button>
       </div>
-      <div id="menu1" class="container tab-pane fade"><br>
-        <h3>Menu 1</h3>
-        <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-      </div>
-      <div id="menu2" class="container tab-pane fade"><br>
-        <h3>Menu 2</h3>
-        <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.</p>
-      </div>
-    </div>
+    </nav>
+  </header>
+
+  <hr>
+
+  <div class="container mt-3 text-center">
+    <h2>Bibioteca de tareas</h2>
   </div>
 
-  <div class="container-fluid p-5 bg-primary text-white text-center">
-    <div>
+  <div class="container-fluid p-5 bg-dark text-white text-center rounded">
+    <div class="rounded bg-danger">
       <h1>Bienvenido a la tarea 5 | EduTech</h1>
       <p>Crear una página web utilizando los siguientes controles de Bootstrap</p>
-      <p>Alertas</p>
-      <p>Carrusel</p>
-      <p>Imágenes</p>
-      <p>Menús desplegables</p>
+      <p class="bg-warning text-black rounded">Alertas</p>
+      <p class="bg-warning text-black rounded">Carrusel</p>
+      <p class="bg-warning text-black rounded">Imágenes</p>
+      <p class="bg-warning text-black rounded">Menús desplegables</p>
     </div>
   </div>
 
@@ -66,24 +74,40 @@
   <div class="container mt-3">
     <h2>Collección de Tareas</h2>
     <div class=" rounded">
-      <a href="#btn1mn" class="badge btn btn-primary" data-bs-toggle="collapse">Primera Tarea</a>
+      <a href="#btn1mn" class="badge btn btn-success fs-4" data-bs-toggle="collapse">Semana <i class="be bi-1-square"></i></a>
       <div id="btn1mn" class="collapse text-black bg-info rounded">
         <p>Tarea de la primera semana.</p>
         <a href="#">Tarea 1</a>
       </div>
     </div>
-    <div class=" rounded">
-      <a href="#btn2mn" class="badge btn btn-primary" data-bs-toggle="collapse">Segunda Tarea</a>
+    <div class="rounded mt-1">
+      <a href="#btn2mn" class="badge btn btn-success fs-4" data-bs-toggle="collapse">Semana <i class="be bi-2-square"></i></a>
       <div id="btn2mn" class="collapse text-black bg-info rounded">
         <p>mezcla de BAGES y COLLAPSE</p>
         <p>Segundo boton colapsable</p>
       </div>
     </div>
-     
-    <span class="badge rounded-pill bg-secondary">Secondary</span>
-    <span class="badge rounded-pill bg-success">Success</span>
-    <span class="badge rounded-pill bg-danger">Danger</span>
-    <span class="badge rounded-pill bg-warning">Warning</span>
+    <div class="rounded mt-1">
+      <a href="#btn3mn" class="badge btn btn-success fs-4" data-bs-toggle="collapse">Semana <i class="be bi-3-square"></i></a>
+      <div id="btn3mn" class="collapse text-black bg-info rounded">
+        <p>mezcla de BAGES y COLLAPSE</p>
+        <p>Segundo boton colapsable</p>
+      </div>
+    </div>
+    <div class="rounded mt-1">
+      <a href="#btn4mn" class="badge btn btn-success fs-4" data-bs-toggle="collapse">Semana <i class="be bi-4-square"></i></a>
+      <div id="btn4mn" class="collapse text-black bg-info rounded">
+        <p>mezcla de BAGES y COLLAPSE</p>
+        <p>Segundo boton colapsable</p>
+      </div>
+    </div>
+    <div class="rounded mt-1">
+      <a href="#btn5mn" class="badge btn btn-success fs-4" data-bs-toggle="collapse">Semana <i class="be bi-5-square"></i></a>
+      <div id="btn5mn" class="collapse text-black bg-info rounded">
+        <p>mezcla de BAGES y COLLAPSE</p>
+        <p>Segundo boton colapsable</p>
+      </div>
+    </div>
   </div>
 
   <hr>
@@ -98,6 +122,9 @@
         quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
       </div>
     </div>
+  </div>
+
+  <hr>
 
     <div class="container mt-3">
       <h2>Accordion Example</h2>
@@ -142,6 +169,8 @@
       </div>
     </div>
   </div>
+
+  <hr>
 
   <div class="container mt-3">
     <h2>Card Image</h2>
@@ -205,8 +234,9 @@
         <li class="page-item"><a class="page-link" href="#">Next</a></li>
       </ul>
     </div>
+  </div>
 
-    <footer class="pie">
+  <footer class="pie">
       <h2>Redes y contacto!</h2>
       <div class="redes">
         <a href="https://devsilvinho.wordpress.com" class="fa fa-wordpress" target="_blank"></a>
